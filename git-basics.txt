@@ -1,0 +1,30 @@
+// Basics:
+
+git init
+ls -a                    // Shows .git
+git status               //Will show untracked/non-committed files (in red)
+git add <file>           // "git add ." may be better.
+git status               // Now the file is in green, if you added the right one.
+
+git commit -m <message>  // Message should be in present imperative tense.
+git log                  // Shows all commits
+
+
+-------------------------------------------------------------------------------------
+// The messed-up version was still there as the master. I fixed that this way.
+git reset --hard <wanted-id>
+git push -f origin master
+-------------------------------------------------------------------------------------
+// Using .gitignore
+
+git init
+git add .
+
+// Undo this, and hide .DS_Store and secrets.txt
+git rm --cached -r .
+
+// Put the file names you want hidden in ".gitignore".
+git add .
+git commit -m "Initial commit"
+
+// The files are hidden that you want so.

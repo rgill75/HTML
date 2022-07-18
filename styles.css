@@ -1,0 +1,29 @@
+@media (max-width: 1000px) {
+  .basic_links {
+    width: 95%;
+  }
+  .fit_page {
+    width: 95%;
+  }
+}
+
+td {
+  padding-right: 20px;
+}
+
+.dropdown-menu li {
+position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
